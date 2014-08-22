@@ -38,6 +38,18 @@ h5 {
 #nav-main ul.sf-menu a {
 	text-transform: uppercase;
 }
+#nav-main {
+	display: table;
+	margin: 0 auto;
+	margin-top: 15px !important;
+}
+#logo {
+	display: table;
+	margin: 0 auto !important;
+}
+.pcside h1, h2{
+	margin-top:0;
+}
 /*
 .slideshow-custom .portfoliolink {
 	position:absolute;

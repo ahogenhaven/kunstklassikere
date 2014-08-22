@@ -25,7 +25,7 @@ Template Name: Portfolio Grid
 							}
 					
 					   		$portfolio_category = $portfolio_cat_slug;
-							if($portfolio_items == 'all') { $portfolio_items = '-1'; }
+							if($portfolio_items == 'all') { $portfolio_items = '100'; }
 					?>
       
 
@@ -53,7 +53,7 @@ Template Name: Portfolio Grid
 					'order' => $p_order,
 					'post_type' => 'portfolio',
 					'portfolio-type'=>$portfolio_cat_slug,
-					'posts_per_page' => $portfolio_items));
+					'posts_per_page' => 40));
 					$count =0;
 					?>
 					<?php if ( $wp_query ) : 
@@ -88,14 +88,15 @@ Template Name: Portfolio Grid
 	                                <?php if($plb) {?><a href="<?php echo $thumbnailURL; ?>" class="kad_portfolio_lightbox_link" title="<?php the_title();?>" rel="lightbox"><i class="icon-search"></i></a><?php }?>
                            				<?php $image = null; $thumbnailURL = null;?>
                            <?php }  ?>
-              	<a href="<?php the_permalink() ?>" class="portfoliolink">
+
+                </div>
+                              	<a href="<?php the_permalink() ?>" class="portfoliolink">
               		<div class="piteminfo">   
                           <h5><?php the_title();?></h5>
                            <?php if($portfolio_item_types == true) { $terms = get_the_terms( $post->ID, 'portfolio-type' ); if ($terms) {?> <p class="cportfoliotag"><?php $output = array(); foreach($terms as $term){ $output[] = $term->name;} echo implode(', ', $output); ?></p> <?php } } ?>
                           <?php if($portfolio_item_excerpt == true) {?> <p><?php echo virtue_excerpt(16); ?></p> <?php } ?>
                     </div>
                 </a>
-                </div>
                     </div>
 					<?php endwhile; else: ?>
 					 

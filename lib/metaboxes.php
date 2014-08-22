@@ -102,18 +102,8 @@ function virtue_metaboxes( array $meta_boxes ) {
 					array( 'name' => __("Image", 'virtue' ), 'value' => 'image', ),
 				),
 			),
-			array(
-				'name' => __("Max Image/Slider Height", 'virtue' ),
-				'desc' => __("Default is: 400 <b>(Note: just input number, example: 350)</b>", 'virtue' ),
-				'id'   => $prefix . 'posthead_height',
-				'type' => 'text_small',
-			),
-			array(
-				'name' => __("Max Image/Slider Width", 'virtue' ),
-				'desc' => __("Default is: 770 or 1140 on fullwidth posts <b>(Note: just input number, example: 650, does not apply to carousel slider)</b>", 'virtue' ),
-				'id'   => $prefix . 'posthead_width',
-				'type' => 'text_small',
-			),
+
+
 			array(
 				'name'    => __("Post Summary", 'virtue' ),
 				'desc'    => '',
@@ -225,110 +215,9 @@ $meta_boxes[] = array(
 					array( 'name' => __('None', 'virtue'), 'value' => 'none', ),
 				),
 			),
-			array(
-				'name' => __("Max Image/Slider Height", 'virtue' ),
-				'desc' => __("Default is: 450 <b>(Note: just input number, example: 350)</b>", 'virtue' ),
-				'id'   => $prefix . 'posthead_height',
-				'type' => 'text_small',
-			),
-			array(
-				'name' => __("Max Image/Slider Width", 'virtue' ),
-				'desc' => __("Default is: 670 or 1140 on <b>above</b> or <b>three row</b> layouts (Note: just input number, example: 650)</b>", 'virtue' ),
-				'id'   => $prefix . 'posthead_width',
-				'type' => 'text_small',
-			),
-			array(
-				'name' => __('Auto Play Slider?', 'virtue'),
-				'desc' => '',
-				'id'   => $prefix . 'portfolio_autoplay',
-				'type'    => 'select',
-				'options' => array(
-					array( 'name' => __('Yes', 'virtue'), 'value' => 'Yes', ),
-					array( 'name' => __('No', 'virtue'), 'value' => 'no', ),
-				),
-			),
-			array(
-				'name' => __('Value 01 Title', 'virtue'),
-				'desc' => __('ex. Project Type:', 'virtue'),
-				'id'   => $prefix . 'project_val01_title',
-				'type' => 'text_medium',
-			),
-			array(
-				'name' => __('Value 01 Description', 'virtue'),
-				'desc' => __('ex. Character Illustration', 'virtue'),
-				'id'   => $prefix . 'project_val01_description',
-				'type' => 'text_medium',
-			),
-			array(
-				'name' => __('Value 02 Title', 'virtue'),
-				'desc' => __('ex. Skills Needed:', 'virtue'),
-				'id'   => $prefix . 'project_val02_title',
-				'type' => 'text_medium',
-			),
-			array(
-				'name' => __('Value 02 Description', 'virtue'),
-				'desc' => __('ex. Photoshop, Illustrator', 'virtue'),
-				'id'   => $prefix . 'project_val02_description',
-				'type' => 'text_medium',
-			),
-			array(
-				'name' => __('Value 03 Title', 'virtue'),
-				'desc' => __('ex. Customer:', 'virtue'),
-				'id'   => $prefix . 'project_val03_title',
-				'type' => 'text_medium',
-			),
-			array(
-				'name' => __('Value 03 Description', 'virtue'),
-				'desc' => __('ex. Example Inc', 'virtue'),
-				'id'   => $prefix . 'project_val03_description',
-				'type' => 'text_medium',
-			),
-			array(
-				'name' => __('Value 04 Title', 'virtue'),
-				'desc' => __('ex. Project Year:', 'virtue'),
-				'id'   => $prefix . 'project_val04_title',
-				'type' => 'text_medium',
-			),
-			array(
-				'name' => __('Value 04 Description', 'virtue'),
-				'desc' => __('ex. 2013', 'virtue'),
-				'id'   => $prefix . 'project_val04_description',
-				'type' => 'text_medium',
-			),
-			array(
-				'name' => __('External Website', 'virtue'),
-				'desc' => __('ex. Website:', 'virtue'),
-				'id'   => $prefix . 'project_val05_title',
-				'type' => 'text_medium',
-			),
-			array(
-				'name' => __('Website Address', 'virtue'),
-				'desc' => __('ex. http://www.example.com', 'virtue'),
-				'id'   => $prefix . 'project_val05_description',
-				'type' => 'text_medium',
-			),
-			array(
-						'name' => __('If Video Project', 'virtue'),
-						'desc' => __('Place Embed Code Here, works with youtube, vimeo...', 'virtue'),
-						'id'   => $prefix . 'post_video',
-						'type' => 'textarea_code',
-					),
-			array(
-				'name' => __('Similar Portfolio Item Carousel', 'virtue'),
-				'desc' => __('Display a carousel with similar portfolio items below project?', 'virtue'),
-				'id'   => $prefix . 'portfolio_carousel_recent',
-				'type'    => 'select',
-				'options' => array(
-					array( 'name' => __('No', 'virtue'), 'value' => 'no', ),
-					array( 'name' => __('Yes - Display Recent Projects', 'virtue'), 'value' => 'recent', ),
-				),
-			),
-			array(
-				'name' => __('Carousel Title', 'virtue'),
-				'desc' => __('ex. Similar Projects', 'virtue'),
-				'id'   => $prefix . 'portfolio_carousel_title',
-				'type' => 'text_medium',
-			),
+
+
+
 				
 		),
 	);
@@ -450,18 +339,7 @@ $meta_boxes[] = array(
 					array( 'name' => __('Image', 'virtue'), 'value' => 'image', ),
 				),
 			),
-			array(
-				'name' => __('Max Image/Slider Height', 'virtue'),
-				'desc' => __('Default is: 400 <b>(Note: just input number, example: 350)</b>', 'virtue'),
-				'id'   => $prefix . 'posthead_height',
-				'type' => 'text_small',
-			),
-			array(
-				'name' => __("Max Image/Slider Width", 'virtue' ),
-				'desc' => __("Default is: 1140 <b>(Note: just input number, example: 650, does not apply to Carousel slider)</b>", 'virtue' ),
-				'id'   => $prefix . 'posthead_width',
-				'type' => 'text_small',
-			),
+
 			array(
 				'name'    => __('Use Lightbox for Feature Image', 'virtue'),
 				'desc'    => __("If feature option is set to image, choose to use lightbox link with image.", 'virtue' ),

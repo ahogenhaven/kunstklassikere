@@ -53,7 +53,7 @@
 } else {$logocclass = 'col-md-4'; $menulclass = 'col-md-8'; }?>
   <div class="container">
     <div class="row">
-          <div class="<?php echo $logocclass; ?>  clearfix kad-header-left">
+          <div class="clearfix kad-header-left">
             <div id="logo" class="logocase">
               <a class="brand logofont" href="<?php echo home_url(); ?>/">
                       <?php global $virtue; if (!empty($virtue['x1_virtue_logo_upload']['url'])) { ?> <div id="thelogo"><img src="<?php echo $virtue['x1_virtue_logo_upload']['url']; ?>" alt="<?php  bloginfo('name');?>" class="kad-standard-logo" />
@@ -64,7 +64,9 @@
            </div> <!-- Close #logo -->
        </div><!-- close logo span -->
 
-       <div class="<?php echo $menulclass; ?> kad-header-right">
+     
+    </div> <!-- Close Row -->
+           <div class="<?php echo $menulclass; ?> kad-header-right" style="width:100%;">
          <nav id="nav-main" class="clearfix" role="navigation">
           <?php
             if (has_nav_menu('primary_navigation')) :
@@ -72,8 +74,7 @@
             endif;
            ?>
          </nav> 
-        </div> <!-- Close span7 -->       
-    </div> <!-- Close Row -->
+        </div> <!-- Close span7 -->  
     <?php if (has_nav_menu('mobile_navigation')) : ?>
            <div id="mobile-nav-trigger" class="nav-trigger">
               <a class="nav-trigger-case mobileclass collapsed" rel="nofollow" data-toggle="collapse" data-target=".kad-nav-collapse">
