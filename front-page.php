@@ -53,7 +53,7 @@ $("#slider4").responsiveSlides({
     else if ($portfolio_column == '3'){ $itemsize = 'tcol-md-4 tcol-sm-4 tcol-xs-6 tcol-ss-12'; $slidewidth = 366; $slideheight = 366; $md = 3; $sm = 3; $xs = 2; $ss = 1;} 
     else if ($portfolio_column == '6'){ $itemsize = 'tcol-md-2 tcol-sm-3 tcol-xs-4 tcol-ss-6'; $slidewidth = 240; $slideheight = 240; $md = 6; $sm = 4; $xs = 3; $ss = 2;} 
     else if ($portfolio_column == '5'){ $itemsize = 'tcol-md-25 tcol-sm-3 tcol-xs-4 tcol-ss-6'; $slidewidth = 240; $slideheight = 240; $md = 5; $sm = 4; $xs = 3; $ss = 2;} 
-    else {$itemsize = 'tcol-md-3 tcol-sm-4 tcol-xs-6 tcol-ss-12'; $slidewidth = 269; $slideheight = 269; $md = 4; $sm = 3; $xs = 2; $ss = 1;}
+    else {$itemsize = 'tcol-md-3 tcol-sm-4 tcol-xs-6 tcol-ss-12'; $md = 4; $sm = 3; $xs = 2; $ss = 1;}
     ?> 
     <?php $portfolio_item_excerpt = get_post_meta( $post->ID, '_kad_portfolio_item_excerpt', true ); $portfolio_item_types = get_post_meta( $post->ID, '_kad_portfolio_item_types', true );  ?>
     <?php $crop = true; ?>
@@ -176,9 +176,7 @@ $wp_query = $temp;  // Reset
         <!-- Featured posts på forsiden-->
 
         <div class="main <?php echo kadence_main_class(); ?>" role="main">
-            <div class="popular-wrap">
-                <h2>Populære billeder</h2>
-            </div>
+
 
             <?php get_template_part('templates/content', 'page'); ?>
             <?php global $post; $portfolio_category = get_post_meta( $post->ID, '_kad_portfolio_type', true ); 
