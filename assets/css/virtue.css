@@ -13,6 +13,8 @@
 .slideshow-custom .piteminfo {
 	top:0;
 	opacity:1;
+	height:0 !important;
+	display:none;
 }
 .kad_portfolio_fade_in {
 	margin-bottom:70px;
