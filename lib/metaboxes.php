@@ -184,7 +184,7 @@ $meta_boxes[] = array(
 	);
 	$meta_boxes[] = array(
 				'id'         => 'portfolio_post_metabox',
-				'title'      => __('Portfolio Post Options', 'virtue'),
+				'title'      => __('Billeder & Video indstillinger', 'virtue'),
 				'pages'      => array( 'portfolio' ), // Post type
 				'context'    => 'normal',
 				'priority'   => 'high',
@@ -192,27 +192,23 @@ $meta_boxes[] = array(
 				'fields' => array(
 			
 			array(
-				'name'    => __('Project Layout', 'virtue'),
+				'name'    => __('Billede/video placering', 'virtue'),
 				'desc'    => '',
 				'id'      => $prefix . 'ppost_layout',
 				'type'    => 'radio_inline',
 				'options' => array(
-					array( 'name' => __('Beside', 'virtue'), 'value' => 'beside', ),
-					array( 'name' => __('Above', 'virtue'), 'value' => 'above', ),
-					array( 'name' => __('Three Rows', 'virtue'), 'value' => 'three', ), 
+					array( 'name' => __('Venstre side', 'virtue'), 'value' => 'beside', ),
+					array( 'name' => __('Over tekst', 'virtue'), 'value' => 'above', ),
 				),
 			),
 			array(
-				'name'    => __('Project Options', 'virtue'),
+				'name'    => __('Billeder eller Video', 'virtue'),
 				'desc'    => '',
 				'id'      => $prefix . 'ppost_type',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => __('Image', 'virtue'), 'value' => 'image', ),
-					array( 'name' => __('Image Slider', 'virtue'), 'value' => 'flex', ),
-					array( 'name' => __('Carousel Slider', 'virtue'), 'value' => 'carousel', ),
+					array( 'name' => __('Billeder', 'virtue'), 'value' => 'flex', ),
 					array( 'name' => __('Video', 'virtue'), 'value' => 'video', ),
-					array( 'name' => __('None', 'virtue'), 'value' => 'none', ),
 				),
 			),
 
