@@ -40,8 +40,8 @@
 				$valueclass = 'col-md-12';
 				$slidewidth_d = 1140;
 			} else {
-				$imgclass = 'col-md-7';
-				$textclass = 'col-md-5 pcside';
+				$imgclass = 'col-md-5';
+				$textclass = 'col-md-7 pcside';
 				$entryclass = '';
 				$valueclass = '';
 				$slidewidth_d = 653;
@@ -83,20 +83,7 @@
                     					}	
 								} ?>                                
 					</ul>
-					<script type="text/javascript">
-			            jQuery(window).load(function () {
-			                jQuery('.flexslider').flexslider({
-			                    animation: "fade",
-			                    animationSpeed: 500,
-			                    slideshow: <?php echo $slideauto; ?>,
-			                    slideshowSpeed: 7000,
 
-			                    before: function(slider) {
-			                      slider.removeClass('loading');
-			                    }  
-			                  });
-			                });
-			      </script>
               </div> <!--Flex Slides-->
               <?php } else if ($ppost_type == 'carousel') { ?>
 					
@@ -232,7 +219,6 @@
 		      <?php the_content(); ?>
 		  </div>
 	    		<div class="<?php echo $valueclass; ?>">
-	    			<div class="pcbelow">
 				    <ul class="portfolio-content disc">
 				    	<?php global $post; $project_v1t = get_post_meta( $post->ID, '_kad_project_val01_title', true );
 				    						$project_v1d = get_post_meta( $post->ID, '_kad_project_val01_description', true );

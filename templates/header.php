@@ -1,6 +1,6 @@
 <header class="banner headerclass" role="banner">
 <?php if (kadence_display_topbar()) : ?>
-  <section id="topbar" class="topclass">
+  <!--<section id="topbar" class="topclass">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-6 kad-topbar-left">
@@ -35,16 +35,17 @@
                 <?php } } }?>
           </div>
         </div><!-- close col-md-6 --> 
+       <!--
         <div class="col-md-6 col-sm-6 kad-topbar-right">
           <div id="topbar-search" class="topbar-widget">
             <?php if(kadence_display_topbar_widget()) { if(is_active_sidebar('topbarright')) { dynamic_sidebar(__('Topbar Widget', 'virtue')); } 
               } else { if(kadence_display_top_search()) {get_search_form();} 
           } ?>
         </div>
-        </div> <!-- close col-md-6-->
-      </div> <!-- Close Row -->
-    </div> <!-- Close Container -->
-  </section>
+        </div> 
+      </div> 
+    </div> 
+  </section> > -->
 <?php endif; ?>
 <?php global $virtue; if(isset($virtue['logo_layout'])) {
   if($virtue['logo_layout'] == 'logocenter') {$logocclass = 'col-md-12'; $menulclass = 'col-md-12';}
@@ -56,11 +57,16 @@
           <div class="clearfix kad-header-left">
             <div id="logo" class="logocase">
               <a class="brand logofont" href="<?php echo home_url(); ?>/">
+              <h1>
                       <?php global $virtue; if (!empty($virtue['x1_virtue_logo_upload']['url'])) { ?> <div id="thelogo"><img src="<?php echo $virtue['x1_virtue_logo_upload']['url']; ?>" alt="<?php  bloginfo('name');?>" class="kad-standard-logo" />
                          <?php if(!empty($virtue['x2_virtue_logo_upload']['url'])) {?> <img src="<?php echo $virtue['x2_virtue_logo_upload']['url'];?>" class="kad-retina-logo" style="max-height:<?php echo $virtue['x1_virtue_logo_upload']['height'];?>px" /> <?php } ?>
                         </div> <?php } else { bloginfo('name'); } ?>
                         </a>
-              <?php if (isset($virtue['logo_below_text'])) { ?> <p class="kad_tagline belowlogo-text"><?php echo $virtue['logo_below_text']; ?></p> <?php }?>
+              <?php if (isset($virtue['logo_below_text'])) { ?> <p class="kad_tagline belowlogo-text"> <?php bloginfo('description'); ?> </p> <?php }?>
+              </h1>
+              <p>
+             
+              </p>
            </div> <!-- Close #logo -->
        </div><!-- close logo span -->
 
@@ -103,3 +109,6 @@
     <?php endif; ?> 
      <?php global $virtue; if (!empty($virtue['virtue_banner_upload']['url'])) { ?> <div class="container"><div class="virtue_banner"><img src="<?php echo $virtue['virtue_banner_upload']['url']; ?>" /></div></div> <?php } ?>
 </header>
+<div class="container">
+<hr class="dividertop">
+</div>

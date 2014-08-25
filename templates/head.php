@@ -9,5 +9,6 @@
   <title><?php wp_title( '|', true, 'right' ); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="<?php if (isset($virtue['virtue_custom_favicon']['url'])) { echo $virtue['virtue_custom_favicon']['url']; } ?>" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   <?php wp_head(); ?>
 </head>
